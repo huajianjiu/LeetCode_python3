@@ -1,3 +1,6 @@
+#重点: 1.in set比in list快; 2.分为000, 负0正, 负负正, 正正负以缩小搜索空间.
+#特别注意分为负负正和正正负比找正负然后讨论第三个数来得快 -- 因为第二个数只需要寻找第一个数的右边即可. 并且可以简单解决重复数字的问题.
+
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         results = set([])
