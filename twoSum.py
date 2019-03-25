@@ -1,3 +1,5 @@
+# py3 one-pass hash
+
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         index_number = {}
