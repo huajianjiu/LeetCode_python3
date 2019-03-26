@@ -1,5 +1,5 @@
 """
-Reduce the initilization operations to speed up.
+Reduce the assignment operations to speed up.
 Runtime: 76 ms, faster than 100.00% of Python3 online submissions for Add Two Numbers.
 Memory Usage: 13.3 MB, less than 5.21% of Python3 online submissions for Add Two Numbers.
 """
