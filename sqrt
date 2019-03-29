@@ -1,0 +1,20 @@
+"""
+牛顿迭代法
+求f(x)=x^2-n与x正轴的交点 (n是题目里给的x)
+任取x正轴上的x_i，做过(x_i,f(x_i))的切线，递归地可以逼近f(x)与x正轴的交点
+切线方程：y-y_i=f'(x_i)(x-x_i) (根据斜率定, i.e., 点斜式)
+故x_{i+1}满足方程 0-y_i=2x_i(x_{i+1}-x_i)
+x_{i+1}=(2x_i^2-y_i)/2x_i
+"""
+class Solution:
+    def mySqrt(self, x: int) -> int:
+        if x == 0: # 注意排除0
+            return 0
+        cur = 0
+        nex = 100
+        while cur != nex:
+            cur = nex
+            nex = cur/2 + x/(2*cur)
+        return int(nex)
+            
+        
